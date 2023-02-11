@@ -1,13 +1,9 @@
-.header {
-  padding: 28px 0;
-
-  background-color: $color-neon-blue;
-
-  .container {
-    display: flex;
-  }
-
-  &__logo {
-    color: $color-default-white;
-  }
+.header__title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-night-rider;
 }
