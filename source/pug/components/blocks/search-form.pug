@@ -9,6 +9,6 @@ mixin search-form()
           inputName: "user-email",
           iconId: "icon-search",
         })(class="search-form__input")
-      button(type="submit").search-form__submit
+      button.search-form__submit(type="submit")
         +icon("icon-clear", 24, 24)
         span Очистить фильтр
