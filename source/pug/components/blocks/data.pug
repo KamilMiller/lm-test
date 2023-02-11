@@ -3,6 +3,16 @@ mixin data()
     h2.data__title.visually-hidden Данные пользователей
     .data__sort-control
       span Сортировка:
-      button(type="button").data__sort-control.data__sort-control--active Дата регистрации
-      button(type="button").data__sort-control Рейтинг
-    ul.data__list
+      button(type="button").data__control-button.data__control-button--active Дата регистрации
+      button(type="button").data__control-button Рейтинг
+    .data__list-wrapper
+      .data__list-header
+        .div__list-column-name
+          span Имя пользователя
+        .div__list-column-name
+          span E-mail
+        .div__list-column-name
+          span Дата регистрации
+        .div__list-column-name
+          span Рейтинг
+      ul.data__list

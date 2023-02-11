@@ -47,10 +47,18 @@
           <section class="data">
             <h2 class="data__title visually-hidden">Данные пользователей</h2>
             <div class="data__sort-control"><span>Сортировка:</span>
-              <button class="data__sort-control data__sort-control--active" type="button">Дата регистрации</button>
-              <button class="data__sort-control" type="button">Рейтинг</button>
+              <button class="data__control-button data__control-button--active" type="button">Дата регистрации</button>
+              <button class="data__control-button" type="button">Рейтинг</button>
             </div>
-            <ul class="data__list"></ul>
+            <div class="data__list-wrapper">
+              <div class="data__list-header">
+                <div class="div__list-column-name"><span>Имя пользователя</span></div>
+                <div class="div__list-column-name"><span>E-mail</span></div>
+                <div class="div__list-column-name"><span>Дата регистрации</span></div>
+                <div class="div__list-column-name"><span>Рейтинг</span></div>
+              </div>
+              <ul class="data__list"></ul>
+            </div>
           </section>
         </div>
       </main>
