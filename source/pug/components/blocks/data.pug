@@ -7,12 +7,27 @@ mixin data()
       button(type="button").data__control-button Рейтинг
     .data__list-wrapper
       .data__list-header
-        .div__list-column-name
+        .data__list-column-name
           span Имя пользователя
-        .div__list-column-name
+        .data__list-column-name
           span E-mail
-        .div__list-column-name
+        .data__list-column-name
           span Дата регистрации
-        .div__list-column-name
+        .data__list-column-name
           span Рейтинг
       ul.data__list
+
+    template(id="user")
+      li.data__item
+        .data__item-section
+          p.data__item-name
+        .data__item-section
+          p.data__item-email
+        .data__item-section
+          p
+            time.data__item-registration-data
+        .data__item-section
+          p.data__item-rating
+        .data__delete-button-box
+          button.data__delete-button(type="button")
+            +icon("icon-close", 16, 16)
