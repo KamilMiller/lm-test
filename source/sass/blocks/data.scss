@@ -85,7 +85,10 @@
   display: grid;
   grid-template-columns: 247px 250px 241px 144px 46px;
   width: 100%;
-  border-bottom: 1px solid $color-white-smoke;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-white-smoke;
+  }
 }
 
 .data__item-section {
@@ -130,4 +133,8 @@
 
 .data__delete-button:active svg {
   color: $color-nobel;
+}
+
+.data__item.hide {
+  display: none;
 }
