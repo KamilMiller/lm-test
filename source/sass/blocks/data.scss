@@ -41,7 +41,7 @@
   padding: 16px;
   background-color: $color-default-white;
   border-radius: 7px;
-  box-shadow: 0px 18px 15px rgba($color-nobel, 0.15);
+  box-shadow: 0 18px 15px rgba($color-nobel, 0.15);
 }
 
 .data__list-header {
@@ -51,13 +51,13 @@
   border-bottom: 1px solid $color-white-smoke;
 }
 
-.div__list-column-name {
+.data__list-column-name {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.div__list-column-name span {
+.data__list-column-name span {
   margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
@@ -70,4 +70,55 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.data__item {
+  display: grid;
+  grid-template-columns: 247px 250px 241px 144px 46px;
+  width: 100%;
+  border-bottom: 1px solid $color-white-smoke;
+}
+
+.data__item-section {
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+
+.data__item-section p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-gray;
+}
+
+.data__item-section .data__item-name {
+  font-weight: 700;
+  color: $color-deep-sky-blue;
+}
+
+.data__delete-button-box {
+  padding-top: 14px;
+}
+
+.data__delete-button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.data__delete-button svg {
+  color: $color-default-black;
+  transition: color $trans-default;
+}
+
+.data__delete-button:hover svg {
+  color: $color-matterhorn;
+}
+
+.data__delete-button:active svg {
+  color: $color-nobel;
 }
