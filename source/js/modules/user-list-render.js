@@ -25,7 +25,7 @@ const buildUserItem = (fragment, element) => {
 };
 
 // Сборка списка с данными пользователей
-const userListRender = (data) => {
+export const userListRender = (data) => {
   userDataArr = data;
   const fragment = document.createDocumentFragment();
   userDataArr.forEach((item) => {
@@ -41,3 +41,5 @@ export const initUserListRender = () => {
   const dataPromise = getData();
   dataPromise.then(userListRender);
 };
+
+export {userDataArr};

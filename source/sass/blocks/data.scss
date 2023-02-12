@@ -35,6 +35,15 @@
     color: $color-night-rider;
     border-color: $color-night-rider;
   }
+
+  &--active {
+    color: $color-night-rider;
+
+    &:hover,
+    &:active {
+      color: $color-night-rider;
+    }
+  }
 }
 
 .data__list-wrapper {
