@@ -3,8 +3,8 @@ mixin data()
     h2.data__title.visually-hidden Данные пользователей
     .data__sort-control
       span Сортировка:
-      button(type="button").data__control-button.data__control-button--active Дата регистрации
-      button(type="button").data__control-button Рейтинг
+      button(type="button" data-sort-registration).data__control-button Дата регистрации
+      button(type="button" data-sort-rating).data__control-button Рейтинг
     .data__list-wrapper
       .data__list-header
         .data__list-column-name
