@@ -1,7 +1,9 @@
 import {getData} from './api';
+import {getUserID} from './delete-user-item';
 
 const userItemTemplate = document.querySelector('#user').content.querySelector('.data__item');
 const userDataList = document.querySelector('.data__list');
+const openModalHiddenButton = document.querySelector('.data__open-modal');
 let userDataArr = [];
 
 // Сборка строки с датой регистрации
@@ -21,6 +23,10 @@ const buildUserItem = (fragment, element) => {
   userItem.querySelector('.data__item-registration-data').setAttribute('datetime', element.registration_date);
   userItem.querySelector('.data__item-rating').textContent = element.rating;
   userItem.querySelector('.data__delete-button').dataset.id = element.id;
+  userItem.querySelector('.data__delete-button').addEventListener('click', (evt) => {
+    getUserID(evt, '.data__delete-button');
+    openModalHiddenButton.click();
+  });
   fragment.appendChild(userItem);
 };
 

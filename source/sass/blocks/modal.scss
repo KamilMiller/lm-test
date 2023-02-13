@@ -55,10 +55,11 @@
   &__content {
     position: relative;
 
-    width: 600px;
-    padding: 40px;
+    width: 353px;
+    padding: 36px 36px 32px 36px;
 
     background-color: $color-default-white;
+    border-radius: 8px;
   }
 
   &__close-btn {

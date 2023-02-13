@@ -5,6 +5,7 @@ import {initFormValidate} from './modules/form/init-form-validate';
 import {initUserListRender} from './modules/user-list-render';
 import {initSort} from './modules/users-sort';
 import {initUsersSearch} from './modules/users-search';
+import {initDeleteUsers} from './modules/delete-user-item';
 
 // ---------------------------------
 
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initDeleteUsers();
 
   // Modules
   // ---------------------------------

@@ -3,9 +3,10 @@ mixin data()
     h2.data__title.visually-hidden Данные пользователей
     .data__sort-control
       span Сортировка:
-      button(type="button" data-sort-registration).data__control-button Дата регистрации
-      button(type="button" data-sort-rating).data__control-button Рейтинг
+      button.data__control-button(type="button" data-sort-registration) Дата регистрации
+      button.data__control-button(type="button" data-sort-rating) Рейтинг
     .data__list-wrapper
+      button.data__open-modal.visually-hidden(type="button" data-open-modal="confirm")
       .data__list-header
         .data__list-column-name
           span Имя пользователя
@@ -29,5 +30,5 @@ mixin data()
         .data__item-section
           p.data__item-rating
         .data__delete-button-box
-          button.data__delete-button(type="button")
+          button.data__delete-button(type="button" aria-label="Удалить пользователя")
             +icon("icon-close", 16, 16)
