@@ -700,9 +700,10 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
+  width: 353px;
+  padding: 36px 36px 32px 36px;
   background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .modal__close-btn {
@@ -1401,6 +1402,50 @@ input::placeholder {
 
 .data__item.hide {
   display: none;
+}
+
+.modal-confirm__question {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal-confirm__button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.modal-confirm__button {
+  padding: 6px 36px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: #828282;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.modal-confirm__button:hover {
+  opacity: 0.8;
+}
+
+.modal-confirm__button:active {
+  opacity: 0.6;
+}
+
+.modal-confirm__button--no {
+  margin-left: 36px;
+  background-color: #0cb4f1;
+  color: #ffffff;
 }
 
 @media (hover: hover), screen and (min-width: 0\0) {

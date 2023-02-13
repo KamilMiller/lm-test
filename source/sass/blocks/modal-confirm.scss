@@ -1,0 +1,37 @@
+.modal-confirm__question {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal-confirm__button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-confirm__button {
+  padding: 6px 36px;
+  background-color: $color-gainsboro;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  color: $color-gray;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--no {
+    margin-left: 36px;
+    background-color: $color-deep-sky-blue;
+    color: $color-default-white;
+  }
+}
