@@ -25,6 +25,10 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+  &--hide {
+    opacity: 0;
+  }
 }
 
 .search-form__submit svg {

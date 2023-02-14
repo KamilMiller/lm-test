@@ -1216,6 +1216,10 @@ input::placeholder {
   cursor: pointer;
 }
 
+.search-form__submit--hide {
+  opacity: 0;
+}
+
 .search-form__submit svg {
   margin-right: 4px;
   -webkit-transition: color 0.3s ease;
