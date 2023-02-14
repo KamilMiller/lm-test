@@ -1,8 +1,10 @@
+import {filterResetActivate, filterReset} from './filters-reset';
 
 const searchInput = document.getElementById('user-email');
 const searchInputClearButton = document.querySelector('.search-form__submit');
 
 const onInputSearch = () => {
+  filterResetActivate();
   let text = searchInput.value.toLowerCase().trim();
   let usersItems = document.querySelectorAll('.data__item');
   if (text !== '') {
@@ -25,7 +27,7 @@ const onInputSearch = () => {
 export const initUsersSearch = () => {
   searchInput.addEventListener('input', onInputSearch);
   searchInputClearButton.addEventListener('click', () => {
-    searchInput.value = '';
-    onInputSearch();
+    filterReset();
   });
+  filterReset();
 };
